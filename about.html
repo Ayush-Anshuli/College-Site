@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/link-logo - Copy.jpg" type="images/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Education Forward</title>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-bar" id="navlinks">
+                <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <a href="index.html">
+                        <li>HOME</li>
+                    </a>
+                    <a href="#">
+                        <li>ABOUT</li>
+                    </a>
+                    <a href="blog.html">
+                        <li>BLOG</li>
+                    </a>
+                    <a href="course.html">
+                        <li>COURSE</li>
+                    </a>
+                    <a href="contact.html">
+                        <li>CONTACT</li>
+                    </a>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>About Us</h1>
+        </div>
+    </section>
+
+
+    <section class="about-us">
+        <div class="row">
+
+            <div class="about-col">
+                <h1>University of India</h1>
+                <p>Government of India had announced flagship initiative of Startup India that is intended to catalyze
+                    startup culture and build a strong and inclusive ecosystem for innovation and entrepreneurship in
+                    India,Major objectives to promote the ecosystem for research, design, development, proof of concept
+                    testing, IPR creation, pilot project and manufacturing i.e. complete value chain to make India a
+                    global hub for production of telecommunication equipment and a centre for digital communication
+                    services</p>
+                <a href="" class="btn red-btn">Explore Now</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- *************************************Footer************************************ -->
+
+    <section class="footer">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae sed quo quasi quae nisi ipsam fugiat ab
+            reprehenderit sint <br> corrupti Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+
+        <div class="icon">
+            <a href="https://github.com/Ayush-Anshuli"><i class="fa-brands fa-github "></i></a>
+            <a href="https://www.instagram.com/ayushraj2788/"><i class="fa-brands fa-instagram a"></i></a>
+            <a href="https://www.linkedin.com/in/ayush-anshuli-1a4b71246/"><i class="fa-brands fa-linkedin b"></i></a>
+            <a href="https://twitter.com/home?lang=en"><i class="fa-brands fa-twitter c"></i></a>
+        </div>
+        <h4>Developed by Ayush-Anshuli</h4>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- ***********JavaScript For Menu **************** -->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showmenu() {
+            navlinks.style.right = "0";
+        }
+
+        function hidemenu() {
+            navlinks.style.right = "-150px";
+        }
+    </script>
+</body>
+
+</html>

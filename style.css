@@ -1,0 +1,599 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 6, 9, 0.7), rgba(4, 6, 9, 0.7)), url(images/banner.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 5%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav img{
+    width: 150px;
+}
+
+.nav-bar{
+    flex: 1;
+    text-align: right;
+}
+.nav-bar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+}
+.nav-bar  a{
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+}
+
+.nav-bar ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-bar ul li:hover::after{ 
+    width: 100%; 
+}
+.text-box{
+    
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+.text-box h1{
+    font-size: 3rem;
+    padding: 5px;
+}
+.text-box p{
+    font-size: 1.5rem;
+    padding: 5px;
+    margin: 30px;
+}
+.text-box a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid white;
+    font-size: 0.95rem;
+    cursor: pointer;
+} 
+.text-box a:hover{
+    background: rgb(255,0,0);
+    transition: 0.5s;
+}
+nav .fa-solid{
+    display: none;
+}
+
+
+/* *************Course part*************** */
+.course{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    font-size: 0.88rem;
+}
+.course p{
+    padding: 5px;
+}
+.row{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+.col{
+    text-align:center;
+    background-color: rgb(228, 197, 202);
+    padding: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 20px;
+    flex-basis: 30% ;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.col h3{
+    text-align: center;
+    margin: 15px;
+    font-size: 1.5rem;
+}
+.col:hover{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.9)
+}
+
+.campus{
+    text-align: center;
+    margin-top: 5%;
+    padding: 15px;
+}
+.campus-col{
+   
+    margin-left: 5%;
+    margin-bottom: 5%;
+    overflow: hidden;
+    position: relative;
+}
+.campus-col img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    
+}
+.layer{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-bottom: 30px;
+    transition: 0.5s;
+}
+.layer:hover{
+    background-color: rgba(255, 0, 0, 0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 25px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute; 
+    transition: 0.55s;
+}
+.layer:hover h3{
+    bottom: 50%;
+    opacity: 1;
+}
+.facilites{
+    text-align: center;
+    padding: 15px;
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+p{
+    padding: 10px;
+}
+
+.facilities-col{
+    flex-basis: 32%;
+
+}
+.facilities-col p{
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 0.85rem;
+}
+.facilities-col img{
+    width: 75%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-left:5%;
+    margin-right: 5%;
+}
+/* **********review ***************/
+.review{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom:5%;
+}
+.review-col{
+    flex-basis:50%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10px;
+    padding-bottom: 30px;
+    text-align: left;
+    background-color: rgb(228, 197, 202);
+    cursor: pointer;
+    display: flex;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    transition: 0.5s;
+}
+.review-col h3{
+    text-align: left;
+    padding-right:10px;
+    margin-top: 20px;
+}
+.review-col p{
+    padding: 0;
+    margin-top: 20px;
+}
+.review-col img{
+    height: 40px;
+    border-radius: 50%;
+    padding: 20px;
+}
+.review-col:hover{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.9)
+}
+/* *****************Contact us**************** */
+.cta{
+    text-align: center;
+    width: 80%;
+    margin: 100px auto;
+    padding: 100px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.cta h1{
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+    padding: 30px;
+}
+    .btn{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        border: 1px solid white;
+        font-size: 0.95rem;
+        cursor: pointer;
+    } 
+    .btn:hover{
+        background: rgb(255,0,0);
+        transition: 0.5s;
+    }
+.footer{
+    text-align: center;
+    padding: 20px;
+}
+.footer p{
+    padding: 20px;
+}
+.icon a{
+    padding-left: 20px;
+    padding-bottom: 35px;
+    color: black;
+    font-size: 1.5rem;
+}
+.a{
+    color: rgb(255, 93, 93);
+}
+.b{
+    color: blue;
+}
+.c{
+    color: rgb(90, 196, 237);
+}
+h4{
+    font-weight: lighter;
+    margin-top: 1%;
+    margin-bottom: 4%;
+}
+
+
+/* ****************about us page************* */
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.text-box{
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.about-col{
+    flex-basis: 50%;
+    padding: 30px 20px;
+}
+.about-col img{
+    width: 100%
+}
+.about-col h1{
+    font-size: 3rem;
+    padding-top: 0;
+}
+.about-col p{
+    padding: 15px 0 25px;
+    font-size: 1rem;
+}
+.red-btn{
+    border: 1px solid red;
+    background: transparent;
+    color: red;
+    transition: 0.5s;
+    font-size: 1rem;
+}
+.red-btn:hover{
+    color: white;
+}
+/* *******************************blog page******************* */
+.blog-content{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+.blog-left{
+    flex-basis: 65%;
+}
+.blog-left img{
+    width: 100%;
+}
+.blog-left h2{
+    font-weight: 500;
+    margin: 30px 0;
+}
+.blog-left p{
+    padding: 0;
+    color: gray;
+}
+.blog-right{
+    flex-basis: 30%;
+}
+.blog-right h3{
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 7px 0;
+    margin-bottom: 20px;
+}
+.blog-right div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.comment-box{
+    border: 1px solid #cccccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+.comment-box h3{
+    text-align: left;
+}
+.comment-form input,.comment-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    background-color: #f0efef;
+    border: none;
+}
+.comment-form button{
+    margin: 10px 0;
+}
+/* *****************************contact********************/
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+.contact-col{
+    margin-bottom: 20%;
+}
+.fa-phone , .fa-envelope , .fa-house{
+    margin-right: 10px;
+    color:  red;
+    font-size: 20px;
+}
+
+.contact-col div{
+    padding-bottom: 30px;
+    display: flex;
+}
+.contact-col div h5{
+    font-size: 20px;
+}
+.contact-col div p{
+    font-size: 15px;
+    padding: 0;
+}
+.contact-col input, .contact-col textarea{
+    margin-bottom: 15px;
+    margin-left: 5%;
+    padding: 10px;
+    width: 100%;
+    background-color: #f0efef;
+    border: 1px solid black;
+}
+.btn-2{
+    background-color: transparent;
+    border: 1px solid red;
+    color: red;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1rem;
+    margin-left: 5%;
+    transition: 0.5s;
+}
+.btn-2:hover{
+    background-color: red;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *********MEDIA QUERY********** */
+@media (max-width:700px) {
+    .text-box h1{
+        font-size: 2rem;
+    }
+    .text-box p{
+        font-size: 1.2rem;
+    
+    }
+    .text-box a{
+        font-size: 0.85rem;
+    } 
+    .nav-bar ul li{
+        display: block;
+        text-align: center;
+    }
+    .nav-bar{
+        position: fixed;
+        background-color: black;
+        height: 100vh;
+        width: 150px;
+        text-align: left;
+        top: 0;
+        transition: 1s;
+        right: -150px;
+    }
+    nav .fa-solid{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .col{
+        margin-top: 5%;
+    }
+    .images{
+        flex-direction: column;
+    }
+    .review-col{
+        margin-top: 5%;
+    }
+    .review-col img{
+        margin-left: 0;
+        margin-right: 15px;
+    }
+    .cta h1{
+        font-size: 1rem;
+    }
+    .footer p{
+        font-size: 0.85rem;
+    }
+    .icon a{
+        font-size: 0.95rem;
+    }
+    h4{
+        margin-top: 2%;
+        font-size: 0.85rem;
+    }
+    .sub-header h1{
+        font-size: 1.5rem;
+    }
+    .fa-phone , .fa-envelope , .fa-house{
+        font-size: 1rem;
+    }
+    .contact-col div h5{
+        font-size: 15px;
+    }
+    .contact-col div p{
+        font-size: 10px;
+        padding: 0;
+    }
+    .contact-col input, .contact-col textarea{
+        box-sizing: border-box;
+    }
+}
+
+
+@media (max-width:360px) {
+    nav img{
+        margin-top: 5%;
+        width: 100px;
+    }
+    .text-box h1{
+        font-size: 2rem;
+       
+    }
+    .text-box p{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .text-box a{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        border: 1px solid white;
+        font-size: 0.65rem;
+        cursor: pointer;
+    }
+    .course h1{
+       font-size: 1.5rem;
+    }
+    .cta a{
+        font-size: 0.75rem;
+    }
+    .icon a{
+        font-size: 0.55rem;
+    }
+    h4{
+        margin-top: 2%;
+        font-size: 0.55rem;
+    }
+    .layer h3{
+        font-size: 1rem;
+    }
+    .sub-header h1{
+        font-size: 1rem;
+    }
+    .contact-col input, .contact-col textarea{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .contact-col div h5{
+        font-size: 15px;
+    }
+    .contact-col div p{
+        font-size: 12px;
+    }
+}

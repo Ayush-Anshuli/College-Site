@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/link-logo - Copy.jpg" type="images/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Education Forward</title>
+</head>
+
+<body>
+    <section class="sub-header ">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-bar" id="navlinks">
+                <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <a href="index.html">
+                        <li>HOME</li>
+                    </a>
+                    <a href="about.html">
+                        <li>ABOUT</li>
+                    </a>
+                    <a href="#">
+                        <li>BLOG</li>
+                    </a>
+                    <a href="course.html">
+                        <li>COURSE</li>
+                    </a>
+                    <a href="contact.html">
+                        <li>CONTACT</li>
+                    </a>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Our Certificate & Online Programs For 2023</h1>
+        </div>
+    </section>
+
+    <!-- **************blog page************* -->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/certificate.jpg">
+                <h2>Our Certificate & Online Programs For 2023</h2>
+
+                <p>The value of receiving an education from a historically Black college and university (HBCU) in
+                    Atlanta has a unique advantage. Not only does the city's vibrant Black community provide a rich
+                    cultural environment, giving students a sense of belonging and empowerment, but Atlanta also serves
+                    as a hub for HBCU employers, offering ample internship, job, and networking opportunities.</p> <br>
+                <p>
+                    Atlanta is home to four of the nation's top HBCUs, all less than a mile apart from each other. The
+                    Morehouse School of Medicine excels in healthcare education. Spelman College and Morehouse College
+                    both offer comprehensive liberal arts programs, while Clark Atlanta University is a renowned
+                    research institution that provides many disciplines to choose from.</p> <br>
+                <p> One interesting HBCU fact
+                    is that all are members of The Atlanta University Center Consortium, the world's oldest and largest
+                    association of HBCUs. Among the member benefits is cross registration, meaning students can enroll
+                    in courses at any of these institutions. There are also shared community partnerships, resources,
+                    and engagement. </p><br>
+                <p> At BestColleges, we believe a college education is one of the most important
+                    investments you can make. We want to help you navigate the college selection process by offering
+                    transparent, inclusive, and relevant school rankings. </p><br>
+                <p> This organization brings together alumni
+                    from different HBCUs to promote networking, professional development, and community engagement. It
+                    offers mentorship programs and job opportunities and hosts social events that connect students with
+                    successful alumni.
+                </p> <br>
+                <p>The Big Homecoming is an annual festival in Atlanta celebrating the music and culture of HBCUs. It
+                    provides a platform for students to showcase talent, connect with industry professionals, and
+                    participate in helpful workshops that sharpen various life skills.</p>
+
+                    <div class="comment-box">
+                        <h3>Leave a Comment</h3>
+                        <form class="comment-form">
+                            <input type="text" placeholder="Enter Name">
+                            <input type="Email" placeholder="Enter Email">
+                            <textarea rows="5">Comment</textarea>
+                            <button class="btn red-btn">Post Comment</button>
+                        </form>
+                    </div>
+
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Data Science</span>
+                    <span>22</span>
+                </div>
+
+                <div>
+                    <span>Artificial Intelligence</span>
+                    <span>20</span>
+                </div>
+
+                <div>
+                    <span>Machine Learning</span>
+                    <span>23</span>
+                </div>
+
+                <div>
+                    <span>Business Analyics</span>
+                    <span>21</span>
+                </div>
+
+                <div>
+                    <span>Computer Science</span>
+                    <span>19</span>
+                </div>
+
+                <div>
+                    <span>AutoCad</span>
+                    <span>30</span>
+                </div>
+
+                <div>
+                    <span>DBMS</span>
+                    <span>25</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- *************************************Footer************************************ -->
+
+    <section class="footer">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae sed quo quasi quae nisi ipsam fugiat ab
+            reprehenderit sint <br> corrupti Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+
+        <div class="icon">
+            <a href="https://github.com/Ayush-Anshuli"><i class="fa-brands fa-github "></i></a>
+            <a href="https://www.instagram.com/ayushraj2788/"><i class="fa-brands fa-instagram a"></i></a>
+            <a href="https://www.linkedin.com/in/ayush-anshuli-1a4b71246/"><i class="fa-brands fa-linkedin b"></i></a>
+            <a href="https://twitter.com/home?lang=en"><i class="fa-brands fa-twitter c"></i></a>
+        </div>
+        <h4>Developed by Ayush-Anshuli</h4>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- ***********JavaScript For Menu **************** -->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showmenu() {
+            navlinks.style.right = "0";
+        }
+
+        function hidemenu() {
+            navlinks.style.right = "-150px";
+        }
+    </script>
+</body>
+
+</html>
